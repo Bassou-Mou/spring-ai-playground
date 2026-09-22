@@ -16,7 +16,7 @@ public class HelloAiController {
     @GetMapping("/api/hello-ai")
     public String helloAi() {
         return chatClient.prompt()
-                .user("Bonjour, présente-toi en une phrase.")
+                .user("Hello, what's spring Ai?")
                 .call()
                 .content();
     }
